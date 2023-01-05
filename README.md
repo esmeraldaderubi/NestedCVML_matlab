@@ -27,14 +27,14 @@ The use of this code is very simple. An example is the following:
 [feat_reduced_all, Measurements_test_all, classifier_best_AFA_all,TableScores_all,TableFairnessbySex,TableFairnessbyAge] = TrainingFeatureTableNested(TableFeatures,method_feature_selection,num_feats,iscor_removed,ismote);
 
 Parameters:
--method_feature_selection: 
+- method_feature_selection: 
   "chi": Chi-Squared test
   "bs": Backward-feature selection
   "scmrmr":  minimum redundancy maximum relevance (MRMR)
   other: forward feature selection
--num_feats: number of features to select in the feature selection
--iscor_removed: if the correlated variables must be removed
--ismote: if you want to incorporate upsampling in the minority class (check dependencies if you want to use it)
+- num_feats: number of features to select in the feature selection
+- iscor_removed: if the correlated variables must be removed
+- ismote: if you want to incorporate upsampling in the minority class (check dependencies if you want to use it)
 
 Output:
 - feat_reduced_all: feature selection result

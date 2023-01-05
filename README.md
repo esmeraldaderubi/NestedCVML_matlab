@@ -28,10 +28,10 @@ The use of this code is very simple. An example is the following:
 Parameters:
 
 - method_feature_selection: 
-  "chi": Chi-Squared test
-  "bs": Backward-feature selection
-  "scmrmr":  minimum redundancy maximum relevance (MRMR)
-  other: forward feature selection
+  - "chi": Chi-Squared test
+  - "fs":  feature forward selection 
+  - "scmrmr":  minimum redundancy maximum relevance (MRMR)
+
 - num_feats: number of features to select in the feature selection
 - iscor_removed: if the correlated variables must be removed
 - ismote: if you want to incorporate upsampling in the minority class (check dependencies if you want to use it)

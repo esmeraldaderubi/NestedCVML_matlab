@@ -17,16 +17,16 @@ Matlab 2021a (without fairness)
 Matlab 2022a (with fairness)
 
 Dependencies (only if you need additional features)
--for kappa and f1_score)
-https://es.mathworks.com/matlabcentral/fileexchange/60900-multi-class-confusion-matrix
-- for smote 
-https://es.mathworks.com/matlabcentral/fileexchange/70315-smote-over-sampling?s_tid=srchtitle
+- for kappa and f1_score): https://es.mathworks.com/matlabcentral/fileexchange/60900-multi-class-confusion-matrix
+- for smote (if needed): https://es.mathworks.com/matlabcentral/fileexchange/70315-smote-over-sampling?s_tid=srchtitle
 
+USAGE:
 The use of this code is very simple. An example is the following:
 
 [feat_reduced_all, Measurements_test_all, classifier_best_AFA_all,TableScores_all,TableFairnessbySex,TableFairnessbyAge] = TrainingFeatureTableNested(TableFeatures,method_feature_selection,num_feats,iscor_removed,ismote);
 
 Parameters:
+
 - method_feature_selection: 
   "chi": Chi-Squared test
   "bs": Backward-feature selection
